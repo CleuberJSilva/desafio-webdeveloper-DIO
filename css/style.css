@@ -1,0 +1,200 @@
+
+
+
+
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/*
+Fontes usadas no site
+font-family: 'Comfortaa', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: #EBEBEB;
+    font-family: 'Open Sans', sans-serif, 'Roboto', sans-serif;
+    color: #1F1F1F;
+}
+
+
+
+.mainscreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.8em;
+}
+
+#fitgram {
+    font-family: 'Comfortaa', cursive;
+    color: #000000;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imgphone img {
+    height: 90vh;
+}
+
+.sidescreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.box {
+    width: 320px;
+    padding: 20px 30px;
+    margin: 6px;
+    background-color: #FDFDFD;
+    border: 1px solid #CFCFCF;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #EBEBEB;
+    border: 1px solid #CFCFCF;
+  }
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #999999;
+}
+
+#btnlogin {
+    font-size: 1em;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #385185;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;    
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#btnlogin:hover {
+    opacity: 1;
+}
+
+
+
+#divline p {
+    color: #CFCFCF;
+    font-size: 1em;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;    
+}
+
+#divline p:before {
+    border-top: 2px solid #CFCFCF;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 9px; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+#divline p span { background: #FFFFFF; padding: 0 10px; }
+
+
+
+.linkfacebook, #appimg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 700;    
+}
+
+.linkfacebook img {
+    height: 22px;
+}
+
+#footerbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    margin: 15px 5px;
+    gap: 20px;
+}
+
+.createaccount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#footerbox a, .createaccount a {
+    text-decoration: none;
+    color: #385185;
+}
+
+.createaccount a {
+    font-weight: 700;
+}
+
+.createaccount p {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    margin: 10px 10px;
+}
+
+#appimg img {
+    height: 40px;
+    gap: 10px;
+    margin-top: 6px;
+}
